@@ -1,0 +1,121 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day","Good bye", "see you later", "enough","stop"],
+         "responses": ["bye"],
+         "context_set": ""
+        },
+        {"tag": "insults",
+         "patterns": ["you are stupid", "you are an idiot", "shut up", "you are not smart"],
+         "responses": ["i am trying my best"],
+         "context_set": ""
+        },
+        {"tag": "functions",
+         "patterns": ["what can you do", "what do you do", "what is your job", "what are your abilities", "functions"],
+         "responses": ["I can recommend some good places to visit,tell information about countries ,do voice translation and show directions using a map"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me assistant.", "I'm your travel assistant!", "I'm your trip guide."],
+         "context_set": ""
+        },
+  {"tag": "thanks",
+         "patterns": ["thank you so much", "thanks", "you were a good helper"],
+         "responses": ["welcome , it's my job"],
+         "context_set": ""
+        },
+   {"tag": "how are you",
+         "patterns": ["how are you", "how is it going with you", "are you ok?","are you happy?"],
+         "responses": ["i'm very good,thanks for asking","i'm fine, glad that you asked"],
+         "context_set": ""
+        },
+
+        {"tag": "map",
+         "patterns": ["I want to go to that place", "how to go there", "I don't know how to go to that place","map"],
+         "responses": ["itineraire"],
+         "context_set": ""
+        },
+        {"tag": "location",
+         "patterns": ["show me my position", "show me my location", "where i am","current location","current position"],
+         "responses": ["current location"],
+         "context_set": ""
+        },
+        {"tag": "translator",
+         "patterns": ["can you translate something for me", "how to say hello in french", "I don't know how to say good morning in spanish","translation"],
+         "responses": ["translation"],
+         "context_set": ""
+        },
+        {"tag": "Tunisia recommendations",
+         "patterns": ["can you recommend some good places to visit in tunisia", "Do you have any suggestions about places in tunisia", "what are the best places to visit in tunisia", "where should i go in tunisia", "Is there any good places to visit in tunisia","tunisia recommendations", "tunisia suggestions", "most visited places in tunisia","best sites in tunisia"],
+         "responses": ["If you're looking for the picture-perfect beach escape, then the island of Djerba checks all the right boxes.\n\nThe island town of Houmt Souk is the main point of interest off the beach, with an old town district that is a muddle of whitewashed houses.","i highly recommend  Sidi Bou Said is a clifftop village of petite dimensions that seem to have fallen off an artist's canvas.\n\nUnsurprisingly, artists have feted this little hamlet, now a high-class suburb of the capital Tunis, for decades. "],
+         "context_set": ""
+        },
+       {"tag": "Maldives recommendations",
+         "patterns": ["can you recommend some good places to visit in Maldives", "Do you have any suggestions about places in Maldives", "what are the best places to visit in Maldives", "where should i go in Maldives", "Is there any good places to visit in Maldives","Maldives recommendations", "Maldives suggestions", "most visited places in Maldives","best sites in Maldives"],
+         "responses": ["what about The capital city of Maldives, Male is one of the most well-organized Maldives tourist places, known popularly for its rich heritage, pristine beaches, bustling markets, narrow lanes, and opulent restaurants","I suggest COMO Cocoa Island ,This cozily positioned island is nothing but a tropical paradise for rejuvenation and relaxation "],
+         "context_set": ""
+        },
+        {"tag": "Spain recommendations",
+         "patterns": ["can you recommend some good places to visit in Spain", "Do you have any suggestions about places in Spain", "what are the best places to visit in Spain", "where should i go in Spain", "Is there any good places to visit in Spain","Spain recommendations", "Spain suggestions", "most visited places in Spain","best sites in Spain"],
+         "responses": ["What about Tenerife, the largest of the seven Spanish Canary Islands off the west coast of Africa, might bring to mind package holidays and beaches, but there is actually so much more to see there","I highly recommend Barcelona ,it is an eternal favourite with visitors, thanks to the stunning Mediterranean location, famous architecture and cosmopolitan atmosphere. "],
+         "context_set": ""
+        },
+          {"tag": "france recommendations",
+         "patterns": ["can you recommend some good places to visit in france", "Do you have any suggestions about places in france", "what are the best places to visit in france", "where should i go in france", "Is there any good places to visit in france","france recommendations", "france suggestions", "most visited places in france","best sites in france"],
+         "responses": ["I highly recommend visiting Paris. Appreciated for its elegance and joie de vivre, Paris is a grand European capital filled with architectural masterpieces like the Eiffel Tower and the Notre-Dame Cathedral..","what about The Charming Countryside of Provence, In this dreamy landscape, Impressionist painters found inspiration to create vibrant works of art."],
+         "context_set": ""
+        },
+         {"tag": "Dubai recommendations",
+         "patterns": ["can you recommend some good places to visit in Dubai", "Do you have any suggestions about places in Dubai", "what are the best places to visit in Dubai", "where should i go in Dubai", "Is there any good places to visit in Dubai","Dubai recommendations", "Dubai suggestions", "most visited places in Dubai","best sites in Dubai"],
+         "responses": ["you have to See Dubai's Famed Cityscape at Burj Khalifa,it is Dubai's landmark building and major tourist attraction","what about Dubai Mall ,it is the city's premier mall and one of the city's best places to visit for a day of shopping and indoor activities to keep the kids busy."],
+         "context_set": ""
+        },
+   {"tag": " United Kingdom recommendations",
+         "patterns": ["can you recommend some good places to visit in United Kingdom", "Do you have any suggestions about places in United Kingdom", "what are the best places to visit in United Kingdom", "where should i go in United Kingdom", "Is there any good places to visit in United Kingdom","United Kingdom recommendations", "United Kingdom suggestions", "most visited places in United Kingdom","best sites in United Kingdom"],
+         "responses": ["i just suggest  London,it is The UK's All-in-One DestinationLocated beside the spectacular Tower Bridge on the banks of the River Thames, this former palace and prison includes highlights such as the iconic 1,000-year-old White Tower, with its fascinating displays of armor and weaponry, and the Jewel House, home to the Crown Jewels. ","One of Scotland's most attractive cities, the capital city of Edinburgh is also one of the UK's most visited destinations. Popular for its many well-preserved historic buildings, Edinburgh is perhaps best known as the home of the majestic Edinburgh Castle."],
+         "context_set": ""
+        },
+      {"tag": "Malaysia recommendations",
+         "patterns": ["can you recommend some good places to visit in Malaysia", "Do you have any suggestions about places in Malaysia", "what are the best places to visit in Malaysia", "where should i go in Malaysia", "Is there any good places to visit in Malaysia","Malaysia recommendations", "Malaysia suggestions", "most visited places in Malaysia","best sites in Malaysia"],
+         "responses": ["You'll most likely fly into Kuala Lumpur when traveling to Malaysia, so this one's a no-brainer The mix of Malay, Chinese, and Indian influence means you'll have no shortage of culinary exploits in Malaysia's capital city","Backpackers and budget travelers love Malaysia's Perhentian Islands, especially Perhentian Kecil — the smaller of the two islands — where fine sand and excellent snorkeling/diving fill the day before parties start at night. "],
+         "context_set": ""
+        },
+  {"tag": "Tunisia information",
+         "patterns": ["can you tell me something about tunisia", "Do you know any anything about tunisia", "do you have some information about  tunisia", "what do you know about tunisia", "i want to know tunisia more","tunisia information", " facts about tunisia", "i don't know tunisia","speak about tunisia"],
+         "responses": ["Tunisia, country of North Africa. Tunisia’s accessible Mediterranean Sea coastline and strategic location have attracted conquerors and visitors throughout the ages, and its ready access to the Sahara has brought its people into contact with the inhabitants of the African interior."],
+         "context_set": ""
+        },
+  {"tag": "Maldives information",
+         "patterns": ["can you tell me something about Maldives", "Do you know any anything about Maldives", "do you have some information about  Maldives", "what do you know about Maldives", "i want to know Maldives more","Maldives information", " facts about Maldives", "i don't know Maldives","speak about Maldives"],
+         "responses": ["Maldives, in full Republic of Maldives, also called Maldive Islands, independent island country in the north-central Indian Ocean. It consists of a chain of about 1,200 small coral islands and sandbanks (some 200 of which are inhabited), grouped in clusters, or atolls."],
+         "context_set": ""
+        },
+  {"tag": "Spain information",
+         "patterns": ["can you tell me something about Spain", "Do you know any anything about Spain", "do you have some information about  Spain", "what do you know about Spain", "i want to know Spain more","Spain information", " facts about Spain", "i don't know Spain","speak about Spain"],
+         "responses": ["Spain, country located in extreme southwestern Europe. It occupies about 85 percent of the Iberian Peninsula, which it shares with its smaller neighbour Portugal.Spain is a storied country of stone castles, snowcapped mountains, vast monuments, and sophisticated cities, all of which have made it a favoured travel destination."],
+         "context_set": ""
+        },
+  {"tag": "france information",
+         "patterns": ["can you tell me something about france", "Do you know any anything about france", "do you have some information about  france", "what do you know about france", "i want to know france more","france information", " facts about france", "i don't know france","speak about france"],
+         "responses": ["France, officially French Republic, French France or République Française, country of northwestern Europe. Historically and culturally among the most important nations in the Western world, France has also played a highly significant role in international affairs, with former colonies in every corner of the globe. Bounded by the Atlantic Ocean and the Mediterranean Sea, the Alps and the Pyrenees, France has long provided a geographic, economic, and linguistic bridge joining northern and southern Europe."],
+         "context_set": ""
+        },
+  {"tag": "Dubai information",
+         "patterns": ["can you tell me something about Dubai", "Do you know any anything about Dubai", "do you have some information about  Dubai", "what do you know about Dubai", "i want to know Dubai more","Dubai information", " facts about Dubai", "i don't know Dubai","speak about Dubai"],
+         "responses": ["Dubai, also spelled Dubayy, city and capital of the emirate of Dubai, one of the wealthiest of the seven emirates that constitute the federation of the United Arab Emirates, which was created in 1971 following independence from Great Britain. There are several theories about the origin of the name Dubai. One associates it with the daba—a type of locust that infests the area—while another holds that it refers to a market that existed near the city. In recent years Dubai has been compared to Singapore and Hong Kong and is often regarded as the Middle East’s premier entrepôt. Area 13.5 square miles (35 square km). Pop. (2017 est.) 2,919,178."],
+         "context_set": ""
+        },
+  {"tag": "United Kingdom information",
+         "patterns": ["can you tell me something about United Kingdom", "Do you know any anything about United Kingdom", "do you have some information about  United Kingdom", "what do you know about United Kingdom", "i want to know United Kingdom more","United Kingdom information", " facts about United Kingdom", "i don't know United Kingdom","speak about United Kingdom"],
+         "responses": ["United Kingdom, island country located off the northwestern coast of mainland Europe. The United Kingdom comprises the whole of the island of Great Britain—which contains England, Wales, and Scotland—as well as the northern portion of the island of Ireland. The name Britain is sometimes used to refer to the United Kingdom as a whole. The capital is London, which is among the world’s leading commercial, financial, and cultural centres. Other major cities include Birmingham, Liverpool, and Manchester in England, Belfast and Londonderry in Northern Ireland, Edinburgh and Glasgow in Scotland, and Swansea and Cardiff in Wales."],
+         "context_set": ""
+        }
+
+
+   ]
+}

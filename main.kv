@@ -1,0 +1,211 @@
+<MainScreen>:
+
+    Image:
+
+        source:"FreeVector-Travel-Background.jpg"
+        allow_stretch: True
+        keep_ratio : False
+    GridLayout:
+        cols:2
+
+
+
+
+
+        GridLayout:
+            padding:12
+            spacing:12
+            background_color:(153/255, 63/255, 191/255, 1)
+            rows:8
+            Label:
+                text:' '
+            Label:
+                text:'Travel Assistant'
+                font_size:45
+                bold:True
+                color:(0,0,0,1)
+
+
+            Label:
+                text:' '
+
+            GridLayout:
+                cols:3
+                Label:
+                    text:""
+                Button:
+                    background_color:(0, 69/255, 0, 1)
+                    text: "speak!"
+
+                    on_press: on_press:root.chat("hello, i am your travel assistant, what can i do for you")
+                    font_size:30
+                    bold: True
+                    background_color: (0, 0, 0, 0)
+                    height: 10
+
+                    canvas.before:
+                        Color:
+                            rgba:(0, 37/255, 0, 1)
+                        RoundedRectangle:
+                            pos:self.pos
+                            size:self.size
+                            radius:[33]
+
+
+                    color: (1, 1, 1, 1)
+                Label:
+                    text:""
+
+            Label:
+                text:""
+
+            Label:
+                text:" "
+            Label:
+                text:" "
+            GridLayout:
+                cols:2
+                Button:
+                    text: 'Quit'
+                    on_press: root.quit("")
+                    font_size:30
+                    bold: True
+                    italic: True
+                    height: 10
+                    background_color: (0, 0, 0, 0)
+                    canvas.before:
+                        Color:
+                            rgba:(0, 37/255, 0, 1)
+                        RoundedRectangle:
+                            pos:self.pos
+                            size:self.size
+                            radius:[0]
+
+                    border: 30,30,30,90
+                    color: (1, 1,1,1)
+                Button:
+                    text: 'TRANSLATE'
+                    on_press: root.manager.current = 'translation'
+
+                    font_size:27
+                    bold: True
+
+                    height: 10
+                    background_color: (0, 0, 0, 0)
+                    canvas.before:
+                        Color:
+                            rgba:(0, 37/255, 0, 1)
+                        RoundedRectangle:
+                            pos:self.pos
+                            size:self.size
+                            radius:[0]
+
+
+                    color: (1, 1,1,1)
+
+
+
+
+
+
+<TranslationScreen>:
+    Image:
+
+        source:"FreeVector-Travel-Background.jpg"
+        allow_stretch: True
+        keep_ratio : False
+
+
+    GridLayout:
+        cols:1
+        rows:8
+        Label:
+            text:" "
+
+        Label:
+            text:"Travel Assistant"
+            font_size:40
+            bold:True
+            color:(0,0,0,1)
+        Label:
+            text:"  "
+        Spinner:
+            id:spinner_id
+            text:"Choose a language"
+            bold:True
+            color:(1,1,1,1)
+            font_size:32
+            values:[   'arabic', 'bengali', 'bosnian', 'bulgarian', 'croatian', 'czech', 'danish', 'dutch', 'english', 'estonian', 'finnish', 'french', 'german', 'greek', 'gujarati',  'hebrew',  'hindi', 'hungarian', 'indonesian', 'irish', 'italian', 'japanese', 'korean', 'latvian', 'lithuanian', 'malay', 'malayalam', 'maltese', 'nepali', 'polish', 'portuguese', 'romanian', 'russian', 'serbian', 'sinhala', 'slovak', 'slovenian', 'spanish', 'swedish', 'tamil', 'telugu', 'thai', 'turkish', 'ukrainian', 'urdu',   'vietnamese', 'welsh']
+            on_text:root.spinner_clicked(spinner_id.text)
+
+            background_color: (0, 0, 0, 0)
+            canvas.before:
+                Color:
+                    rgba:(0, 37/255, 0, 1)
+                RoundedRectangle:
+                    pos:self.pos
+                    size:self.size
+                    radius:[28]
+        Label:
+            text:" "
+        Label:
+            text:" "
+        Label:
+            text:"  "
+        GridLayout:
+            cols:3
+            Label:
+                text:"  "
+            Button:
+
+                text: 'Back'
+                on_press: root.manager.current = 'main'
+                font_size:30
+                bold: True
+                italic: True
+                height: 10
+                background_color: (0, 0, 0, 0)
+                canvas.before:
+                    Color:
+                        rgba:(0, 37/255, 0, 1)
+                    RoundedRectangle:
+                        pos:self.pos
+                        size:self.size
+                        radius:[28]
+
+                border: 30,30,30,30
+                color: (1, 1,1,1)
+            Label:
+                text:"  "
+
+<MapScreen>:
+    BoxLayout:
+        Button:
+            text: 'map'
+            on_press: on_press:root.showingmap("https://www.google.com/maps/")
+            font_size:30
+        Button:
+            text: 'Back to menu'
+            on_press: root.manager.current = 'main'
+
+
+
+<RecommendationScreen>:
+    BoxLayout:
+        Button:
+            text: 'My settings button'
+        Button:
+            text: 'Back to menu'
+            on_press: root.manager.current = 'main'
+
+
+<ChatbotScreen>:
+    BoxLayout:
+        Button:
+            text: 'My settings button'
+        Button:
+            text: 'chat'
+            on_press: root.chat
+        Button:
+            text: 'Back to menu'
+            on_press: root.manager.current = 'main'
